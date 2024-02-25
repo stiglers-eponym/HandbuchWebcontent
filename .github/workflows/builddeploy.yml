@@ -1,0 +1,53 @@
+name: "Create documentation and deploy"
+
+on:
+  push:
+    branch:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  build_html:
+    name: "build and deploy"
+    runs-on: ubuntu-22.04
+    steps:
+    - name: "Checkout repository"
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: "Install sphinx dependencies"
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install -y --no-install-recommends python3-pip
+        pip3 install --user -I --no-input sphinx furo
+    
+    - name: "Create HTML"
+      run: |
+        python3 -m sphinx -b html src _build/html
+
+    - name: "Prepare deployment"
+      run: |
+        mkdir -p ~/.ssh
+        echo 'www221.your-server.de ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChJHNhP1Fy5f58uL1bqibdDEajCFTSk6Pp2QDlnJPb0NVPhu8c7MSRPfe3K/mjEa0m30GPIvEqjGBNyGC1M67ZWqgi8SQi2GdtoICmP3bFzPp6LrSHWkuSuVkJqvVp8N5vXgU6cDan+KPgswLiDB9+VT4GG6ulwt0bNZn+UPzBcAvf/r/nWjMrDElzRmo4yBDFpAw/QuBUh/5gGt/EGKN5xGMHHQ+kBXFaaaU8/NO1SpO+JUEJ+BB1JOhszume2UCiIEKHjKbMpysrLQ9SozW8wK/A4Y7hO3WoJqKYAzALp8VI97L3GfqRkBevR3VSSXt6/QqHSYSo9pPQPHZ+2ehj' >> ~/.ssh/known_hosts
+
+    - name: "Deploy HTML"
+      env:
+        FTP_KEY: ${{ secrets.FTP_DEPLOY_VBRUCH_EU }}
+      run: |
+        sshpass -p "$FTP_KEY" scp -r _build/html/* vbruch_1@www221.your-server.de:/webcontent/
+    
+    - name: "Install LaTeX dependencies"
+      run: |
+        sudo apt install -y --no-install-recommends texlive-luatex texlive-latex-recommended texlive-latex-extra latexmk
+    
+    - name: "Create PDF"
+      run: |
+        python3 -m sphinx -b latex src _build/latex
+        cd _build/latex && latexmk -pdflua handbuchwebcontent.tex
+
+    - name: "Deploy PDF"
+      env:
+        FTP_KEY: ${{ secrets.FTP_DEPLOY_VBRUCH_EU }}
+      run: |
+        sshpass -p "$FTP_KEY" scp _build/latex/handbuchwebcontent.pdf vbruch_1@www221.your-server.de:/webcontent/handbuch.pdf
