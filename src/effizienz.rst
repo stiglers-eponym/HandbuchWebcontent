@@ -7,13 +7,21 @@ Die Effizienz von Webcontent ist aus mehreren Gründen wichtig. Effizienz
 verringert die Ladedauer von Webseiten und erhöht damit die
 Nutzerfreundlichkeit. Außerdem müssen weniger Daten übertragen werden
 und der Energieverbrauch ist geringer. Das ist durchaus relevant, denn
-der Energiebedarf des Internets ist beachtlich [1]_. Zu bedenken ist die
-Effizienz immer, wenn größere Datenmengen übertragen werden, etwa bei
-Bildern oder Videos. In anderen Fällen ist die Effizienz eher eine
-Aufgabe der Admins.
+der Energiebedarf des Internets ist beachtlich [1]_.
+
+Zu bedenken ist die Effizienz immer, wenn größere Datenmengen übertragen
+werden, etwa bei Bildern oder Videos. In anderen Fällen ist die Effizienz
+eher eine Aufgabe der Admins.
 
 Codierung von Medien
 ^^^^^^^^^^^^^^^^^^^^
+
+Bei Bildern, Videos und Audiodaten sucht man typischerweise einen
+Kompromiss zwischen Datenmenge und Qualität. Entscheidend sind die
+Auflösung von Bildern und Videos, aber auch das Dateiformat und andere
+Einstellungen. Durch ein grundlegendes Verständnis davon kann man
+vermeiden, dass Ladedauer und Energieverbrauch der Webseite ein
+Vielfaches des nötigen betragen.
 
 Bilder
 ------
@@ -70,7 +78,7 @@ Checkliste
 
 -  Haben Bilder die richtige Auflösung?
 
-.. _automatische-tests-effizienz:
+.. _tests-effizienz:
 
 Automatische Tests
 ^^^^^^^^^^^^^^^^^^

@@ -9,42 +9,47 @@ HTML-Code, also von Webcontent im gleichen Format wie auf Webseiten.
 Beim Verwenden von Emails über reinen Text hinaus sollte man folgendes
 beachten.
 
+Sicherheitsrisiken in Emails
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Per Email kann man jemandem direkt Webcontent schicken, oft ohne dass
-eine echte Überprüfung des Absenders stattfindet. Dadurch sind Emails
+eine echte Überprüfung des Absenders stattfindet. Deshalb sind Emails
 beliebte Einfallstore für Cyberangriffe. Um dem entgegenzuwirken, ist es
 vernünftig, nur unbedenkliche Inhalte in Emails direkt anzuzeigen. Ein
 so eingestelltes Emailprogramm wird also Emails möglicherweise
-abgewandelt darstellen. Man sollte in Emails also auf Elemente
+abgewandelt darstellen. Deshalb sollte man in Emails auf Elemente
 verzichten, die potentiell für Hackerangriffe genutzt werden könnten
-(z. B. JavaScript). Sonst wirkt eine Email schnell als potentiell
-gefährlich.
+(z. B. JavaScript). Sonst wirkt eine Email schnell potentiell gefährlich.
 
+Zwei Alternativen in einer Email
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Die sicherste Darstellung von Emails beschränkt sich nur auf den Text.
 Oft besteht eine Email technisch aus zwei alternativen Teilen: einem
-nur-Text-Teil und einem HTML-Teil (Webcontent). Das Emailprogramm
-entscheidet, welcher Teil davon angezeigt wird. Programme zum Versenden
-von Newslettern sind meistens so eingestellt, dass der damit erstellte
-Webcontent automatisch in einen nur-Text-Teil konvertiert und in der
-Email mitgeschickt wird. Das funktioniert dann gut, wenn man sich an die
-Empfehlungen zur Barrierefreiheit hält.
+nur-Text-Teil und einem HTML-Teil (Webcontent). Das Emailprogramm der
+Empfänger*in entscheidet, welcher Teil davon angezeigt wird. Programme
+zum Versenden von Newslettern sind meistens so eingestellt, dass der
+damit erstellte Webcontent automatisch in einen nur-Text-Teil konvertiert
+und in der Email mitgeschickt wird. Das funktioniert dann gut, wenn man
+sich an die Empfehlungen zur :doc:`barrierefreiheit` hält.
 
-Eine weitere Möglichkeit bei Emails sind Anhänge. Dabei ist zu beachten,
+Anhänge
+^^^^^^^
+Eine praktische Funktion von Emails sind Anhänge. Jedoch ist zu beachten,
 dass der Datentransfer per Emailanhang grundsätzlich ineffizienter ist
 als andere Formen des Datentransfers. Große Anhänge verbrauchen
 Speicherplatz bei Sender*in und Empfänger*in, und machen das Laden von
 Emails langsam. Deshalb ist typischerweise eine Maximalgröße für
 eingehende Emails eingestellt, sodass zu große Emails einfach nicht
 zugestellt werden — teils ohne dass der oder die Absender*in das merkt.
-Zum Anhang von Emails zählen übrigens oft auch Bilder, die in der Email
-dargestellt werden sollen.
 
-Wenn Dateien verschickt werden sollen, gibt es meist effizientere
+Wenn große Dateien verschickt werden sollen, gibt es meist effizientere
 Lösungen als Emails. Die zu verschickende Datei wird bei einem
-Cloudservices (z.Ḃ. Nextcloud) oder auf einer Webseite hochgeladen und
+Cloudservices (z. B. Nextcloud) oder auf einer Webseite hochgeladen und
 per Email wird nur der Link zu der Datei verschickt. Das ist effizienter
 und lässt die Email schneller laden, insbesondere wenn es sich um eine
 große Datei handelt.
 
+Verteiler und Datenschutz
+^^^^^^^^^^^^^^^^^^^^^^^^^
 Eine weitere Gefahr bei Emails sind versehentliche Datenlecks. Wenn man
 eine Email an viele Empfänger*innen (also einen großen Verteiler)
 schickt, sollte man diese Empfänger*innen immer in BCC packen, sodass
@@ -66,7 +71,7 @@ Checkliste
 
 -  Emails sollten im nur-Text-Format und in HTML lesbar sein
 
-.. rubric:: Fortgeschritten
+.. topic:: Fortgeschritten
 
--  Wenn Newsletter verschickt werden, sollten DKIM und SPF-records
-   angepasst sein. (Aufgabe für Domain-Admins)
+   -  Wenn Newsletter verschickt werden, sollten DKIM und SPF-records
+      angepasst sein. (Aufgabe für Domain-Admins)

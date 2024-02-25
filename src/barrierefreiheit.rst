@@ -26,29 +26,38 @@ insbesondere folgende Aspekte:
    lesen. Fachbegriffe werden vermieden oder erklärt. Das ist zwar kein
    technischer Punkt, aber trotzdem wichtig.
 
-Die Punkte 1 bis 4 werden
-üblicherweise beim Erstellen einer Webseite oder eines Designs bedacht.
-Beim Hinzufügen neuer Inhalte sollten sich diese Punkte ohne Mehraufwand
-ergeben.
+Design und Struktur
+^^^^^^^^^^^^^^^^^^^
+Die Punkte 1 und 4 werden üblicherweise beim Erstellen einer Webseite
+oder eines Designs bedacht. Beim Hinzufügen neuer Inhalte sollten sich
+diese Punkte ohne Mehraufwand ergeben.
 
-Auch Punkt 2 zur visuellen
-Darstellung muss bereits beim Erstellen eines Designs bedacht werden.
-Aber auch bei einzelnen Inhalten, etwa bei der Darstellung von Text vor
-einem Bild, muss ein ausreichender Kontrast und ausreichend große
+Auch Punkt 2 zur visuellen Darstellung muss bereits beim Erstellen
+eines Designs bedacht werden. Aber auch bei einzelnen Inhalten,
+etwa bei der Darstellung von Text vor einem Bild, muss ein
+ausreichender Kontrast und ausreichend große
 Schrift bedacht werden.
 
-Wesentlich beim Erstellen von Inhalten ist
-Punkt 3 zur Beschreibung von visuellen
-Elementen. Für jedes Bild sollte eine kurze Beschreibung erstellt
-werden. Üblicherweise geschieht das noch von Hand. Der sogenannte
-“alt”-Text für Bilder wird angezeigt, wenn ein Bild nicht angezeigt
+Visuelle Elemente
+^^^^^^^^^^^^^^^^^
+Wesentlich beim Erstellen von Inhalten ist Punkt 3 zur Beschreibung
+von visuellen Elementen. Für jedes hochgeladene Bild sollte eine kurze
+Beschreibung erstellt werden, um den Zweck des Bildes für Menschen mit
+visueller Beeinträchtigung erkennbar zu machen. Üblicherweise geschieht
+das noch von Hand.
+
+Der sogenannte “alt”-Text für Bilder wird angezeigt, wenn ein Bild nicht angezeigt
 werden kann, und er beschreibt das Bild beim Vorlesen der Seite durch
 einen Screenreader. Bei WordPress kann man für jedes Bild einen alt-Text
 anlegen und auch bei Facebook-Posts kann ein alt-Text für Bilder
-angegeben werden. Falls Videos eingebettet werden, können Untertitel zur
+angegeben werden.
+
+Falls Videos eingebettet werden, können Untertitel zur
 Barrierefreiheit beitragen. Es gibt Software zum automatischen
 Hinzufügen von Untertiteln, die aber in der Regel noch eine manuelle
 Korrektur brauchen.
+
+.. _checkliste-barrierefreiheit:
 
 Checkliste
 ^^^^^^^^^^
@@ -63,13 +72,15 @@ Checkliste
 -  Ist der Text auf allen Geräten (Computer, Smartphone, evtl. Tablet)
    gut zu lesen?
 
-.. rubric:: Fortgeschritten
+.. topic:: Fortgeschritten
 
--  Sind Links ausreichend weit voneinander entfernt, damit man auf einem
-   Touchscreen nicht versehentlich das falsche anklickt?
+   -  Sind Links ausreichend weit voneinander entfernt, damit man auf einem
+      Touchscreen nicht versehentlich das falsche anklickt?
 
--  Bei einer Webseite: Kann man mit der Tab-Taste gut durch die auf der
-   Webseite vorhandenen Links und Menüs navigieren?
+   -  Bei einer Webseite: Kann man mit der Tab-Taste gut durch die auf der
+      Webseite vorhandenen Links und Menüs navigieren?
+
+.. _tests-barrierefreiheit:
 
 Automatische Tests
 ^^^^^^^^^^^^^^^^^^

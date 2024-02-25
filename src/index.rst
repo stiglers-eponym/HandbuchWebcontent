@@ -5,6 +5,24 @@ Handbuch Webcontent
 
 Das Bespielen von Webseiten, Newslettern und anderen digitalen Kommunikationswegen erfordert meist kein technisches Fachwissen. Trotzdem hilft etwas Hintergrundwissen, um die Ergebnisse besser zugänglich, effizienter und sicherer zu gestalten. Dieses Dokument soll dieses Wissen vermitteln, ohne technisches Fachwissen vorauszusetzen.
 
+
+.. only:: not latex
+
+   .. topic:: Dokument herunterladen
+
+    `Download als PDF <https://vbruch.eu/docs/webcontent/handbuch.pdf>`_
+
+.. only:: not html
+
+   .. topic:: Dieses Dokument als Webseite
+
+      https://vbruch.eu/docs/webcontent
+
+.. topic:: Zu diesem Dokument beitragen
+
+  Anmerkungen, Korrekturen, Ergänzungen zu diesem Dokument:
+  https://github.com/stiglers-eponym/HandbuchWebcontent/issues
+
 .. toctree::
    :maxdepth: 2
 

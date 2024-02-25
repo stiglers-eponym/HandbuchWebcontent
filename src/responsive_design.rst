@@ -16,9 +16,11 @@ man die Ansicht auf verschiedenen Geräten prüfen. Verwendet man nur die
 vorgegebenen Designelemente ohne manuellen Anpassungen, so sollte die
 Ansicht automatisch auf allen Geräten funktionieren.
 
-Auch ein Webseite-Design ist oft nicht perfekt. Es fällt aber in der
-Regel in den Aufgabenbereich der Admins, an die man sich bei Problemen
-wenden sollte.
+.. hint::
+
+  Auch ein Webseite-Design ist meistens nicht perfekt. Es fällt aber in der
+  Regel in den Aufgabenbereich der Admins, an die man sich bei Problemen
+  wenden sollte.
 
 Zum Testen der Darstellung kann man Webseiten mit verschiedenen Geräten
 öffnen. Es hilft aber auch, am Computer die Größe des Browserfensters zu
@@ -40,14 +42,14 @@ Checkliste
 
 -  Sieht die Darstellung auf dem Smartphone gut aus?
 
--  Genau getestet werden sollte insbesondere wenn
+-  Genau getestet werden sollte insbesondere wenn...
 
    -  manuelle Anpassungen z. B. der Schriftgröße vorgenommen wurden
 
    -  Tabellen, Spalten oder andere kompexere Designelemente verwendet
       werden
 
-.. _automatische-tests-rd:
+.. _tests-rd:
 
 Automatische Tests
 ^^^^^^^^^^^^^^^^^^

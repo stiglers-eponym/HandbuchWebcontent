@@ -30,13 +30,13 @@ Checkliste
 -  Habe ich mehr Berechtigungen als ich brauche? Dann sollten die
    Berechtigungen reduziert werden.
 
-.. rubric:: Fortgeschritten
+.. topic:: Fortgeschritten
 
--  Bei Webseiten: Werden regelmäßig Backups gemacht?
+   -  Bei Webseiten: Werden regelmäßig Backups gemacht?
 
--  Bei Webseiten: werden regelmäßig Updates eingespielt?
+   -  Bei Webseiten: Werden regelmäßig Updates eingespielt?
 
-.. _automatische-tests-sicherheit:
+.. _tests-sicherheit:
 
 Automatische Tests
 ^^^^^^^^^^^^^^^^^^
