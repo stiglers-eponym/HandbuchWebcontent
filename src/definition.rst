@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Definition von Webcontent für dieses Dokument
+   :keywords lang=de: Webseiten, Newsletter
+   :author: Valentin Bruch
+
 .. _sec-definition:
 
 Was ist Webcontent?

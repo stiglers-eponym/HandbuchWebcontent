@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Einleitung Handbuch Webcontent
+   :keywords lang=de: Webseiten, Newsletter, Barrierefreiheit
+   :author: Valentin Bruch
+
 .. _sec-einleitung:
 
 Einleitung

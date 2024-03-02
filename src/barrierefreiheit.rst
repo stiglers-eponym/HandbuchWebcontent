@@ -1,3 +1,8 @@
+.. meta::
+   :description: Hinweise zur Barrierefreiheit auf Webseiten
+   :keywords: Barrierefreiheit
+   :author: Valentin Bruch
+
 .. _sec-barrierefreiheit:
 
 Barrierefreiheit
@@ -49,7 +54,7 @@ das noch von Hand.
 Der sogenannte “alt”-Text für Bilder wird angezeigt, wenn ein Bild nicht angezeigt
 werden kann, und er beschreibt das Bild beim Vorlesen der Seite durch
 einen Screenreader. Bei WordPress kann man für jedes Bild einen alt-Text
-anlegen und auch bei Facebook-Posts kann ein alt-Text für Bilder
+anlegen und auch bei Facebook und Instagram kann ein alt-Text für Bilder
 angegeben werden.
 
 Falls Videos eingebettet werden, können Untertitel zur

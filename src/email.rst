@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Hinweise zur Emails und Newslettern
+   :keywords lang=de: Email, Newsletter, Datenschutz
+   :author: Valentin Bruch
+
 .. _sec-email:
 
 Emails und Newsletter

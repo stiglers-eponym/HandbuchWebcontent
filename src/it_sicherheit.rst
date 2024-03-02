@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Hinweise zu IT-Sicherheit auf Webseiten und in Newslettern
+   :keywords lang=de: IT-Sicherheit, Cybersicherheit, Webseiten, Newsletter
+   :author: Valentin Bruch
+
 .. _sec-it-sicherheit:
 
 IT-Sicherheit

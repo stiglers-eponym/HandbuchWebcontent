@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Hinweise zur Effizienz und Geschwindigkeit von Webseiten
+   :keywords lang=de: Effizienz, Komprimierung, Geschwindigkeit
+   :author: Valentin Bruch
+
 .. _`sec:effizienz`:
 
 Effizienz
@@ -17,11 +22,11 @@ Codierung von Medien
 ^^^^^^^^^^^^^^^^^^^^
 
 Bei Bildern, Videos und Audiodaten sucht man typischerweise einen
-Kompromiss zwischen Datenmenge und Qualität. Entscheidend sind die
+Kompromiss zwischen Dateigröße und Qualität. Entscheidend sind die
 Auflösung von Bildern und Videos, aber auch das Dateiformat und andere
 Einstellungen. Durch ein grundlegendes Verständnis davon kann man
 vermeiden, dass Ladedauer und Energieverbrauch der Webseite ein
-Vielfaches des nötigen betragen.
+Vielfaches des Nötigen betragen.
 
 Bilder
 ------
@@ -43,9 +48,8 @@ ineffizient machen.
 
 Neben PNG und JPEG gibt es das modernere Format WebP. WebP kann Bilder
 entweder verlustfrei (wie PNG) oder verlustbehaftet (wie JPEG)
-komprimieren. Allerdings ist es insbesondere bei starker Komprimierung
-(also kleinen Dateien) besser. WebP wird von allen modernen Webbrowsern
-und ca. 97% der global verwendeten Webbrowser unterstützt. [3]_
+komprimieren und ist insbesondere bei starker Komprimierung besser.
+WebP wird von ca. 97% der Endgeräte unterstützt. [3]_
 
 Neben dem Format ist die Auflösung von Bildern entscheidend für die
 Dateigröße. Zu geringe Auflösung von Bildern lässt diese verpixelt
@@ -63,11 +67,45 @@ Funktion ist aber Aufgabe der Admins.
 Videos
 ------
 
-Noch wichtiger als bei Bildern ist die Komprimierung bei Videos. Wenn
-man Streamingdienste wie Youtube oder Peertube zum Einbetten von Videos
-verwendet, muss man sich um diese Komprimierung in der Regel keine
-Sorgen machen. Sonst braucht man in der Regel einen Kompromiss aus
-Qualität und Dateigröße.
+Noch wichtiger als bei Bildern ist die Komprimierung (oder Codierung)
+bei Videos, da für Videos deutlich mehr Daten übertragen werden müssen.
+Die Komprimierung ist hier grundsätzlich ein Kompromiss zwischen
+Qualität, Datenrate bzw. Dateigröße und der zum Komprimieren benötigten
+Rechenleistung.
+
+Wenn man Streamingdienste wie YouTube oder PeerTube zum Einbetten von
+Videos verwendet, muss man sich um die Komprimierung in der Regel keine
+Sorgen machen. Man lädt das Video in hoher Qualität hoch und der
+Streamingdienst codiert es passend. [4]_
+Außerdem haben diese Dienste in der Regel viele Server,
+um die Videos bereitzustellen. So wird der eigene Server entlastet.
+Jedoch muss ggf. in der Datenschutzerklärung einer Webseite darauf
+hingewiesen werden, dass externe Anbieter zum Streamen von Videos
+verwendet werden, da dadurch Daten an diese externen Dienstleister
+übertragen werden.
+
+Wenn man keinen Streamingdienst verwendet und sich selbst um die
+Komprimierung kümmert, gibt es einige Einstellungen zu beachten.
+Die Auswahl des Videocodecs ist entscheidend für die Effizienz der
+Codierung und dafür, welche Endgeräte das Video abspielen können.
+Zu beachten ist, dass das Videocodec nicht gleichbedeutend mit dem
+Dateiformat und der Dateiendung ist: MP4-Videos können beispielsweise
+unterschiedliche Videocodecs nutzen, von denen nicht alle auf allen
+Geräten funktionieren. Verbreitete Videocodecs für Webcontent sind:
+
+-  VP9 (in WebM-Videos): von den meisten Endgeräten unterstützt
+-  H.264 (in mp4-Videos): alt und weniger effizient, von quasi allen
+   Endgeräten unterstützt
+
+Modernere Codecs wie AV1 und H.265 erreichen bei gleicher Qualität
+geringere Dateigrößen, werden jedoch von weniger Endgeräten unterstützt. [5]_
+
+Bei der Codierung gibt es zudem Einstellungen zu Datenrate oder
+Qualität von Video und Audio sowie teils zum Rechenaufwand der
+Codierung. Dazu kommen Einstellungen zur Auflösung und Framerate,
+die in der Regel bereits beim Aufzeichnen des Videos gesetzt werden.
+Allgemeine Empfehlungen dazu findet man bei Software zu Videocodierung
+wie etwa `ffmpeg <https://trac.ffmpeg.org/wiki/Encode/VP9>`__.
 
 .. _checkliste-effizienz:
 
@@ -77,6 +115,8 @@ Checkliste
 -  Sind Bilder im richtigen Format?
 
 -  Haben Bilder die richtige Auflösung?
+
+-  Sind eingebettete Videos effizient komprimiert und nicht zu groß?
 
 .. _tests-effizienz:
 
@@ -103,3 +143,14 @@ Automatische Tests
 
 .. [3]
    Quelle: https://caniuse.com/webp, Stand Februar 2024
+
+.. [4]
+   Empfohlene Einstellungen zum Hochladen bei Youtube:
+   https://support.google.com/youtube/answer/1722171
+
+.. [5]
+   Es ist technisch möglich, verschiedene Formate bereitzustellen,
+   sodass das Endgerät sich das passende Format aussucht. Dann können
+   moderne Formate wie AV1 verwendet werden. Die begrenzte
+   Unterstützung von H.265 durch Browser hat (auch) lizenzrechtliche
+   Gründe.

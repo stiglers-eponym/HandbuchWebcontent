@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: automatische Tests für Webseiten
+   :keywords lang=de: Webseiten
+   :author: Valentin Bruch
+
 .. _sec-tests:
 
 Automatische Tests

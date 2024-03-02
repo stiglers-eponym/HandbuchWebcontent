@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Darstellung von Webcontent auf verschiedenen Geräten
+   :keywords lang=de: responsive design, Webseiten, Newsletter
+   :author: Valentin Bruch
+
 .. _sec-responsive-design:
 
 Anzeige auf verschiedenen Geräten

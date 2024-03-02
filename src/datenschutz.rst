@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Hinweise zum Datenschutz auf Webseiten und in Newslettern
+   :keywords lang=de: Datenschutz
+   :author: Valentin Bruch
+
 .. _sec-datenschutz:
 
 Datenschutz

@@ -1,3 +1,8 @@
+.. meta::
+   :description lang=de: Hinweise zum Erstellen von Webcontent für Menschen ohne tiefere IT-Kenntnisse
+   :keywords lang=de: Webseiten, Newsletter, WordPress, Barrierefreiheit, Effizienz
+   :author: Valentin Bruch
+
 Handbuch Webcontent
 ===================
 
